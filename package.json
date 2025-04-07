@@ -1,0 +1,32 @@
+{
+  "name": "yolov8-tfjs",
+  "description": "Object detection application right in your browser using YOLOv8 and Tensorflow.js",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "object detection",
+    "yolov8",
+    "javascript",
+    "react",
+    "tensorflow.js"
+  ],
+  "author": "Vidrua Erandika",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ViduraErandika/browser_object_detection_yolo/issues"
+  },
+  "homepage": "https://github.com/ViduraErandika",
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.15.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^1.0.7",
+    "vite": "^2.8.0"
+  }
+}
