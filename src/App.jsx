@@ -44,6 +44,9 @@ const App = () => {
     'keyboard', 'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book',
     'clock', 'vase', 'scissors', 'teddy bear', 'hair drier', 'toothbrush'
   ];
+  // const CLASS_NAMES = [
+  //   'MF293N(VoLTE)', 'ZXHN F660'
+  // ];
 
   const processOutput = (output) => {
     // Convert tensor to array
@@ -67,7 +70,6 @@ const App = () => {
           classId = j - 4;
         }
       }
-      
       // Filter out low confidence predictions
       if (maxProb > confThreshold) {
         // Extract box coordinates (cx, cy, w, h)
@@ -189,6 +191,7 @@ const App = () => {
   console.warn = () => {};
 
   return (
+    
     <div className="App">
       <h2>Object Detection Using yolo & Tensorflow.js</h2>
       {loading.loading ? (
